@@ -9,7 +9,11 @@ Eine bestimmte Form der Steganographie. Hier werden die Least Significant Bits (
 
 ## Vorgehen der Anwendung
 Die Anwendung zerlegt das Trägermedium (Bild) in seine binären Bestandteile und extrahiert die LSBs pro Kanal und speichert sie in eine sparate Kanal-Liste. Diese Kanal-Listen werden in gleich große Blöcke zerteilt. Jeder Block ist 1.000 Bit groß. Pro Block wird der Mittelwert berechnet und diese Mittelwerte in je nach Kanal in eine weitere Liste gespeichert. In einem Scatter-Plot (dt. Streudiagramm) werden schließlich diese Blöcke durch Punkte visualisiert. Das Muster dieser Streuung lässt dann darauf schließen, ob LSB-Steganographie auf das vermeintliche Trägermedium angewendet wurde oder nicht. Zum testen der Anwendung liegt ein Bild mit LSB-Steganographie vor und eins ohne.
+
+## Streudiagramm am Beispiel eines Bildes ohne LSB-Steganograohie
 ![Streudiagramm am Beispiel eines Bildes ohne LSB-Steganograohie](/docs/Screenshots/Mit_LSB-Stego.png "Scatter-Plot")
+
+## Streudiagramm am Beispiel eines Bildes mit LSB-Steganograohie
 ![Streudiagramm am Beispiel eines Bildes mit LSB-Steganograohie](/docs/Screenshots/Ohne_LSB-Stego.png "Scatter-Plot")
 
 ## Ausführen der Anwendung
